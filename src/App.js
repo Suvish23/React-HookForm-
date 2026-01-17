@@ -6,6 +6,7 @@ import Contact from './pages/Contact';
 import NavBar from './components/NavBar';
 import { createContext } from 'react';
 import {QueryClient,QueryClientProvider} from "@tanstack/react-query"
+import Counter from './pages/Counter';
 export const AppContex=createContext();
 
 
@@ -24,6 +25,7 @@ return (
   <Route path="/" element={<Home/>}/>
   <Route path="/profile" element={<Profile/>}/>
   <Route path="/contact" element={<Contact/>}/>
+  <Route path="/counter" element={<Counter/>}/>
 </Routes>
 </Router>
   </AppContex.Provider>
